@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990256CF2440EA20001F3290 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990256CE2440EA20001F3290 /* DetailView.swift */; };
+		994A648D2440EE0700F0E596 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994A648C2440EE0700F0E596 /* WebView.swift */; };
 		996CF6992440C1930078CFF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996CF6982440C1930078CFF9 /* AppDelegate.swift */; };
 		996CF69B2440C1930078CFF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996CF69A2440C1930078CFF9 /* SceneDelegate.swift */; };
 		996CF69D2440C1930078CFF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996CF69C2440C1930078CFF9 /* ContentView.swift */; };
 		996CF69F2440C19F0078CFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996CF69E2440C19F0078CFF9 /* Assets.xcassets */; };
 		996CF6A22440C19F0078CFF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996CF6A12440C19F0078CFF9 /* Preview Assets.xcassets */; };
 		996CF6A52440C19F0078CFF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996CF6A32440C19F0078CFF9 /* LaunchScreen.storyboard */; };
+		996CF6AE2440D73D0078CFF9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996CF6AD2440D73D0078CFF9 /* NetworkManager.swift */; };
+		996CF6B12440D9B60078CFF9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996CF6B02440D9B60078CFF9 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		990256CE2440EA20001F3290 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		994A648C2440EE0700F0E596 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		994A648E2440F38E00F0E596 /* H4XOR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = H4XOR.entitlements; sourceTree = "<group>"; };
 		996CF6952440C1930078CFF9 /* H4XOR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H4XOR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996CF6982440C1930078CFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		996CF69A2440C1930078CFF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		996CF6A12440C19F0078CFF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		996CF6A42440C19F0078CFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		996CF6A62440C19F0078CFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		996CF6AD2440D73D0078CFF9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		996CF6B02440D9B60078CFF9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +65,11 @@
 		996CF6972440C1930078CFF9 /* H4XOR */ = {
 			isa = PBXGroup;
 			children = (
+				994A648E2440F38E00F0E596 /* H4XOR.entitlements */,
 				996CF6982440C1930078CFF9 /* AppDelegate.swift */,
 				996CF69A2440C1930078CFF9 /* SceneDelegate.swift */,
-				996CF69C2440C1930078CFF9 /* ContentView.swift */,
+				996CF6AF2440D7410078CFF9 /* Model */,
+				996CF6AC2440D7160078CFF9 /* View */,
 				996CF69E2440C19F0078CFF9 /* Assets.xcassets */,
 				996CF6A32440C19F0078CFF9 /* LaunchScreen.storyboard */,
 				996CF6A62440C19F0078CFF9 /* Info.plist */,
@@ -73,6 +84,25 @@
 				996CF6A12440C19F0078CFF9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		996CF6AC2440D7160078CFF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				996CF69C2440C1930078CFF9 /* ContentView.swift */,
+				990256CE2440EA20001F3290 /* DetailView.swift */,
+				994A648C2440EE0700F0E596 /* WebView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		996CF6AF2440D7410078CFF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				996CF6AD2440D73D0078CFF9 /* NetworkManager.swift */,
+				996CF6B02440D9B60078CFF9 /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996CF6AE2440D73D0078CFF9 /* NetworkManager.swift in Sources */,
+				990256CF2440EA20001F3290 /* DetailView.swift in Sources */,
 				996CF6992440C1930078CFF9 /* AppDelegate.swift in Sources */,
 				996CF69B2440C1930078CFF9 /* SceneDelegate.swift in Sources */,
 				996CF69D2440C1930078CFF9 /* ContentView.swift in Sources */,
+				996CF6B12440D9B60078CFF9 /* Post.swift in Sources */,
+				994A648D2440EE0700F0E596 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,17 +318,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = H4XOR/H4XOR.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"H4XOR/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Z5FL8L65S;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = H4XOR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.kitn.H4XOR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,17 +341,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = H4XOR/H4XOR.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"H4XOR/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Z5FL8L65S;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = H4XOR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.kitn.H4XOR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
